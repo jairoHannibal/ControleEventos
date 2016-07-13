@@ -2,12 +2,12 @@ import java.awt.List;
 import java.util.Date;
 
 public class Evento {
-	String descricao;
-	String nome;
-	Boolean ativo;
-	List atividades;
-	Date dataInicio;
-	Date dataFim;
+	private String descricao;
+	private String nome;
+	private Boolean ativo;
+	private List atividades;
+	private Date dataInicio;
+	private Date dataFim;
 
 	public String getDescricao() {
 		return descricao;
@@ -39,6 +39,22 @@ public class Evento {
 
 	public void setAtividades(List atividades) {
 		this.atividades = atividades;
+	}
+
+	public Date getDataInicio() {
+		return dataInicio;
+	}
+
+	public void setDataInicio(Date dataInicio) {
+		this.dataInicio = dataInicio;
+	}
+
+	public Date getDataFim() {
+		return dataFim;
+	}
+
+	public void setDataFim(Date dataFim) {
+		this.dataFim = dataFim;
 	}
 
 }
